@@ -1,0 +1,321 @@
+/* General reset for better styling */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #fff7e6; /* Warm cream background */
+    color: #5a3921; /* Dark brown text */
+  }
+  
+  /* Header styles */
+  header {
+    background-color: #ffbb91; /* Warm peach background */
+    padding: 20px;
+    text-align: center;
+  }
+  
+  header h1 {
+    margin: 0;
+    color: #5a3921; /* Dark brown text */
+    font-family: 'Georgia', serif; /* Pretty font for the title */
+  }
+  
+  /* Navigation menu styles */
+  .nav-menu {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    background-color: #ffa870; /* Warm orange background */
+    flex-wrap: wrap; /* Ensures menu wraps on smaller screens */
+  }
+  
+  .nav-menu li {
+    margin: 0 15px;
+    position: relative; /* Needed for dropdown positioning */
+  }
+  
+  .nav-menu a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 10px 15px;
+    display: block;
+    transition: background-color 0.3s ease;
+  }
+  
+  .nav-menu a:hover {
+    background-color: #ff7f50; /* Slightly darker orange on hover */
+    border-radius: 5px;
+  }
+  
+  /* Dropdown menu styles */
+  .dropdown-menu {
+    display: none; /* Hidden by default */
+    position: absolute;
+    top: 100%; /* Below the parent menu item */
+    left: 0;
+    list-style: none;
+    background-color: #ffa870; /* Same as nav background */
+    padding: 0;
+    margin: 0;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .dropdown-menu li {
+    margin: 0;
+  }
+  
+  .dropdown-menu a {
+    padding: 10px 20px;
+    color: white;
+    display: block;
+  }
+  
+  .dropdown-menu a:hover {
+    background-color: #ff7f50; /* Slightly darker orange on hover */
+  }
+  
+  /* Show the dropdown menu when hovering over the parent item */
+  .dropdown:hover .dropdown-menu {
+    display: block;
+  }
+  
+  /* Footer styles */
+  footer {
+    background-color: #5a3921; /* Dark brown background */
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 14px;
+  }
+  
+  /* Responsive Design */
+  
+  /* For tablets and smaller devices */
+  @media (max-width: 768px) {
+    .nav-menu {
+      flex-direction: column; /* Stack menu items vertically */
+      align-items: center; /* Center align items */
+    }
+  
+    .nav-menu li {
+      margin: 10px 0;
+    }
+  
+    header h1 {
+      font-size: 24px; /* Reduce header size */
+    }
+  }
+  
+  /* For mobile phones */
+  @media (max-width: 480px) {
+    header h1 {
+      font-size: 20px; /* Smaller header font */
+      padding: 10px; /* Reduce padding */
+    }
+  
+    .nav-menu a {
+      padding: 8px 10px; /* Smaller padding for links */
+      font-size: 14px; /* Adjust font size */
+    }
+  
+    .dropdown-menu {
+      position: static; /* Dropdown appears below parent item */
+      box-shadow: none; /* Remove shadow for simplicity */
+    }
+  
+    .dropdown-menu a {
+      text-align: center; /* Center-align dropdown items */
+    }
+  }
+/* Recipe List Styles */
+.recipe-list {
+    list-style: none; /* Remove default list styling */
+    padding: 0;
+    margin: 20px 0;
+    text-align: center;
+  }
+  
+  .recipe-list li {
+    margin: 10px 0;
+  }
+  
+  .recipe-list a {
+    text-decoration: none;
+    color: #5a3921; /* Dark brown text */
+    background-color: #ffa870; /* Warm orange background */
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+  }
+  
+  .recipe-list a:hover {
+    background-color: #ff7f50; /* Slightly darker orange on hover */
+    color: white;
+  }
+/* General layout */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: #5a3921; /* Warm brown text */
+    background-color: #fffaf3; /* Light cream background */
+  }
+  
+  h1, h2 {
+    color: #d35400; /* Burnt orange color for headings */
+    text-align: center;
+  }
+  
+  /* Navigation menu */
+  .nav-menu {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    background-color: #ffa870;
+    margin: 0;
+  }
+  
+  .nav-menu li {
+    margin: 0 10px;
+  }
+  
+  .nav-menu a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .nav-menu a:hover {
+    background-color: #ff7f50; /* Slightly darker orange */
+  }
+  
+  /* About section layout */
+  .about-section {
+    display: flex;
+    flex-wrap: wrap; /* Makes it responsive */
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff7e6; /* Cream background for the section */
+    border-radius: 10px;
+  }
+  
+  .about-image img {
+    max-width: 300px; /* Image size */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin: 20px;
+  }
+  
+  .about-text {
+    max-width: 600px; /* Limit text width for readability */
+    margin: 20px;
+    text-align: justify;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .about-section {
+      flex-direction: column; /* Stack image and text */
+    }
+  
+    .about-image img {
+      max-width: 80%; /* Reduce image size on smaller screens */
+    }
+  
+    .about-text {
+      text-align: center; /* Center-align text on smaller screens */
+    }
+  }
+/* Contact Section */
+.contact-section {
+    text-align: center;
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff7e6; /* Cream background */
+    border-radius: 10px;
+  }
+  
+  .contact-section h2 {
+    color: #d35400; /* Burnt orange */
+  }
+  
+  .contact-text p {
+    margin: 10px 0;
+    color: #5a3921; /* Warm brown */
+  }
+  
+  /* Form Styles */
+  .form-section,
+  .subscription-section {
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 600px;
+    background-color: #fffaf3; /* Light cream */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  form label {
+    display: block;
+    margin-bottom: 5px;
+    color: #5a3921;
+  }
+  
+  form input,
+  form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  form input:focus,
+  form textarea:focus {
+    outline: none;
+    border-color: #d35400;
+  }
+  
+  textarea {
+    resize: vertical; /* Allow vertical resizing only */
+  }
+  
+  /* Button Styles */
+  button {
+    display: inline-block;
+    background-color: #ffa870;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  button:hover {
+    background-color: #ff7f50; /* Slightly darker orange */
+    transform: scale(1.05); /* Slight zoom effect */
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 768px) {
+    .form-section,
+    .subscription-section {
+      margin: 10px;
+      padding: 15px;
+    }
+  }
+  
