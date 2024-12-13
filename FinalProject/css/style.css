@@ -1,0 +1,220 @@
+/* Global Styles */
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+}
+
+/* Header Section */
+header {
+    background-color: #007bff;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    font-family: 'Georgia', serif;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+nav .nav-item .nav-link {
+    font-size: 1.1rem;
+    color: #fff !important;
+}
+
+nav .nav-item .nav-link:hover {
+    color: #ffb6c1 !important;
+}
+
+.navbar {
+    padding: 0.5rem 1rem;
+    background-color: #007bff;
+}
+
+.navbar-toggler {
+    border-color: #fff;
+}
+
+.navbar-collapse {
+    justify-content: center;
+}
+
+.navbar-nav .nav-item {
+    margin: 0 15px;
+}
+
+/* Hero Section */
+.hero {
+    background-color: #f8f9fa;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.hero .btn-primary {
+    background-color: #007bff;
+    color: #fff;
+    font-size: 1.1rem;
+}
+
+/* Blog Section */
+.blog-section {
+    padding: 50px 0;
+}
+
+.blog-section .card {
+    border: none;
+    border-radius: 10px;
+}
+
+.blog-section .card img {
+    border-radius: 10px;
+    max-width: 100%;
+    height: auto;
+}
+
+.blog-section .card-title {
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.blog-section .card-text {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* About Section */
+.about-section {
+    background-color: #f9f9f9;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.about-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.about-section p {
+    font-size: 1.1rem;
+    color: #555;
+}
+
+.about-section img {
+    border-radius: 10px;
+    max-width: 100%;
+    height: auto;
+}
+
+.about-section .btn-primary {
+    margin-top: 20px;
+}
+
+/* Tips Section */
+.tips-section {
+    background-color: #f8f9fa;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.tips-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.tips-section p {
+    font-size: 1.1rem;
+    color: #333;
+}
+
+.tips-section h3 {
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+}
+
+.tips-section ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.tips-section ul li {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 8px;
+}
+
+.tips-section ul li a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #007bff;
+}
+
+.tips-section ul li a:hover {
+    text-decoration: underline;
+    color: #ffb6c1;
+}
+
+/* Footer Section */
+footer {
+    background-color: #007bff;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer p {
+    margin: 0;
+    font-size: 1rem;
+}
+
+/* Buttons */
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #004085;
+    color: #ffb6c1;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    .hero h2,
+    .about-section h2,
+    .tips-section h2 {
+        font-size: 2rem;
+    }
+
+    .hero p,
+    .tips-section p,
+    .about-section p {
+        font-size: 1rem;
+    }
+
+    .navbar-nav {
+        font-size: 1rem;
+    }
+
+    .blog-section .col-md-4,
+    .tips-section .col-md-6 {
+        margin-bottom: 20px;
+    }
+}
